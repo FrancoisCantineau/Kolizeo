@@ -38,6 +38,10 @@ public class SceneTransitionManager : MonoBehaviour
         simulateLoading = Random.Range(0, 3) == 0;
 
     }
+    public void StartTransition()
+    {
+        AudioManager.Instance.PlayTransitionIn();
+    }
     
     public void OnFullyCovered()
     {

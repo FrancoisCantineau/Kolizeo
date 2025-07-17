@@ -11,6 +11,6 @@ public class TransitionAnimationEvent : MonoBehaviour
 
     public void OnStartInTransition()
     {
-        AudioManager.Instance.PlayTransitionIn();
+        SceneTransitionManager.Instance.StartTransition();
     }
 }
